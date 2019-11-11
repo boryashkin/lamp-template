@@ -50,7 +50,7 @@ services:
 #      - 33066:3306
     volumes:
       - ./data/db/mysql:/var/lib/mysql
-      - /data/init/mysql:/docker-entrypoint-initdb.d/:ro
+      - ./data/init/mysql:/docker-entrypoint-initdb.d/:ro
     networks:
       - temp-project
   temp-project-nginx:
